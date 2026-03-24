@@ -1,0 +1,568 @@
+.app {
+  min-height: 100svh;
+  background: radial-gradient(1200px 600px at 50% -200px, #2a241a 0%, transparent 55%),
+    linear-gradient(180deg, #0d0f14 0%, #0b0c10 60%, #0a0b0f 100%);
+  color: #e7e7ea;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 14px 14px 12px;
+  background: rgba(10, 11, 15, 0.78);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f1f1f3;
+  cursor: pointer;
+}
+
+.iconButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: rgba(248, 201, 92, 0.18);
+  border: 1px solid rgba(248, 201, 92, 0.42);
+  color: #f8c95c;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.brand {
+  text-align: left;
+}
+
+.brandName {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+}
+
+.brandTagline {
+  font-size: 12px;
+  color: rgba(231, 231, 234, 0.72);
+  margin-top: 2px;
+}
+
+.content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px 14px 110px;
+}
+
+.heroSection {
+  position: relative;
+  height: 360px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 10px 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.35);
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.7s ease;
+}
+
+.heroSection:hover .heroImage {
+  transform: scale(1.04);
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08) 10%, rgba(10, 11, 15, 0.88) 86%),
+    radial-gradient(circle at 65% 15%, rgba(238, 199, 77, 0.16) 0%, transparent 34%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  padding: 22px;
+}
+
+.heroTitle {
+  margin: 0 0 10px;
+  line-height: 0.95;
+  font-size: clamp(40px, 8vw, 62px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #ececee;
+  text-shadow: 0 0 18px rgba(255, 229, 158, 0.2);
+}
+
+.heroTitleAccent {
+  display: block;
+  color: #ffe59e;
+  font-style: italic;
+  text-shadow: 0 0 22px rgba(255, 229, 158, 0.34);
+}
+
+.heroCopy {
+  margin: 0;
+  max-width: 400px;
+  color: rgba(231, 231, 234, 0.86);
+  font-size: clamp(16px, 2.7vw, 20px);
+  line-height: 1.34;
+}
+
+@media (max-width: 680px) {
+  .heroSection {
+    height: 320px;
+  }
+}
+
+.categoryChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+
+.chip {
+  text-decoration: none;
+  color: rgba(231, 231, 234, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.category {
+  margin: 26px 0 18px;
+}
+
+.categoryHeader h2 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  color: rgba(231, 231, 234, 0.86);
+  letter-spacing: 0.2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 680px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cardImageWrap {
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cardName {
+  font-weight: 800;
+  letter-spacing: 0.1px;
+}
+
+.cardPrice {
+  font-weight: 800;
+  color: #f8c95c;
+  white-space: nowrap;
+}
+
+.cardActions {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.qty {
+  display: grid;
+  grid-template-columns: 36px 42px 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  overflow: hidden;
+}
+
+.qty.compact {
+  grid-template-columns: 34px 40px 34px;
+}
+
+.qtyBtn {
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: #f1f1f3;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.qtyCount {
+  text-align: center;
+  font-weight: 800;
+  color: rgba(231, 231, 234, 0.92);
+}
+
+.primary {
+  height: 42px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(248, 201, 92, 0.45);
+  background: linear-gradient(180deg, #f8d174 0%, #f1ba3c 100%);
+  color: #111318;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+
+.primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ghost {
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(231, 231, 234, 0.86);
+  cursor: pointer;
+}
+
+.muted {
+  color: rgba(231, 231, 234, 0.62);
+  font-size: 12px;
+}
+
+.bottomSpacer {
+  height: 12px;
+}
+
+.cartBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px calc(12px + env(safe-area-inset-bottom));
+  background: rgba(10, 11, 15, 0.84);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.cartBarLeft {
+  display: grid;
+  gap: 2px;
+}
+
+.cartBarTitle {
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+.cartBarMeta {
+  color: rgba(231, 231, 234, 0.70);
+  font-size: 12px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: end center;
+}
+
+.drawer {
+  width: min(720px, 100%);
+  max-height: 92svh;
+  background: rgba(12, 13, 18, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 18px 18px 0 0;
+  overflow: auto;
+  padding: 14px;
+}
+
+.drawerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.drawerTitle {
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  font-size: 18px;
+}
+
+.drawerSubtitle {
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  margin: 14px 0 10px;
+}
+
+.cartList {
+  display: grid;
+  gap: 10px;
+  padding-top: 12px;
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.cartItemName {
+  font-weight: 900;
+}
+
+.cartItemSub {
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgba(231, 231, 234, 0.68);
+}
+
+.cartItemRight {
+  display: grid;
+  gap: 8px;
+  justify-items: end;
+}
+
+.fieldLabel {
+  display: block;
+  font-size: 12px;
+  color: rgba(231, 231, 234, 0.72);
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  border-radius: 14px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(231, 231, 234, 0.92);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: rgba(248, 201, 92, 0.55);
+  box-shadow: 0 0 0 3px rgba(248, 201, 92, 0.12);
+}
+
+.recap {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.strong {
+  font-weight: 900;
+}
+
+.totalRow {
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.grand {
+  font-weight: 1000;
+  color: #f8c95c;
+  letter-spacing: 0.2px;
+}
+
+.drawerActions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.empty {
+  padding: 18px 4px;
+  color: rgba(231, 231, 234, 0.72);
+}
+
+.paymentHeader {
+  text-align: center;
+  padding: 12px 0 10px;
+}
+
+.kicker {
+  color: rgba(248, 201, 92, 0.84);
+  font-weight: 900;
+  letter-spacing: 0.22px;
+}
+
+.paymentTitle {
+  margin: 12px 0 8px;
+  font-size: 28px;
+  letter-spacing: -0.6px;
+}
+
+.paymentSubtitle {
+  margin: 0 auto;
+  max-width: 520px;
+  color: rgba(231, 231, 234, 0.68);
+}
+
+.paymentCard {
+  margin: 12px auto;
+  max-width: 560px;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.kv {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.kv:last-child {
+  border-bottom: none;
+}
+
+.k {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.22px;
+  color: rgba(231, 231, 234, 0.60);
+}
+
+.v {
+  font-weight: 900;
+  margin-top: 6px;
+}
+
+.accountRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.accountNumber {
+  font-size: 22px;
+  letter-spacing: 0.6px;
+}
+
+.copyBtn {
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(248, 201, 92, 0.45);
+  background: rgba(248, 201, 92, 0.16);
+  color: #f8c95c;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.bigTotal {
+  font-size: 26px;
+  font-weight: 1000;
+  margin-top: 6px;
+  color: #f8c95c;
+}
+
+.cta {
+  display: block;
+  margin: 14px auto 0;
+  max-width: 560px;
+  width: 100%;
+  height: 52px;
+  border-radius: 16px;
+}
+
+.finePrint {
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(231, 231, 234, 0.48);
+  font-size: 11px;
+  letter-spacing: 0.24px;
+}

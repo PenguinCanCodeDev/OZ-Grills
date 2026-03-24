@@ -1,0 +1,16 @@
+export const media = {
+  hero: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDHXAhAy17AAJ4HTpgQhAaxLto8mnxmHcpp2nR2y2G7xnZpC3a-SD1FtVtxVuWewLieMcoafon11_eJsweGAB6_clTE63Ku0obd1cl0iR6NBtMypuLedagEWHX4_EGwo5kr7EVhtXXF6sjBJiusCUYco2jPb_IEhnf3wd5-FLZo7nLVBgLkx_-Gebcn2YUaiPAz2oxOLsojzNb8-5SZxjzHda36AmqRDAa6NE2yLjUSdiwMl8QjYRS8MZMqwJSrSjsnqNAoaeuCpQk',
+  items: {
+    1:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuBtsBJb-SGmvFQG2vb-6Q-CGFz_a7cmJH_Ftt9ikVD7P8erhOkddXL8f0ueryA48h-MGZkcC34ZrFFzK1Uu_PSUbWm4eH3F5Y_7B7a415KY_adx2oB-S0z4yKu3QAcXOstEAUx3Q-01RvIEc9dqznkrACEA-HN7evQ5G_xdNuFh_Poyo9jKvzZNZgj4X66tbMqR6LCCBFot_R6Oof--eapBUz9A9pFC5z0zS9kznIXKb2REsbjQUhP5Z1IKmQWjOOVM-X8sFI9E0XA',
+    101:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuBiw6HpzG2Xl3gw3pNAWQAoGKGk6xL-iBGiv7gIrl2IzbUq1Zt1BJ2UdoXxJWmGnZebnFS6PwHu4wZ7lDuNGrkMR4JAKBr1_V85LNhmTbJEzAS3jObZUPEtoDYQ-KIWtpwE_qahEHx6W43tdBtEX6YMjhv_0T_bi6SXY2CT4OYCXbws-i1OrTW03Q27Ur5cKRzxRtiQzwpcBu5NnHc3CKFCHhyfrstsmfboHBP8tPamHe7xNHS68cUhzGLCO57kpIlQaO8lk0ih534',
+    201:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuBD4-9SDWaCn5Exb8UUADPts4EQYlotxYSZkNZy48EUtCEur13_paPVs1dbIhV2S7IeRJXwxgBJlbNhP8BBFBSCxlLF2x6n56Lm7Vti9xDUk-bj43cjvq1ZitFilTC9z06zhy_JuSl8vIYpAwCuf0IqXx6dDsU7iXwzW8Iasy8suEDaIFPYTzDZ-p3jjhFQhOGkc-8t8eA-pl4GuGKX7NhVTxY43hdGMTybBcw_pZh70xkrtKLl8v7PEEuvk-sUxdo1oE48IszXLL4',
+    301:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuBUIITrSZYtjC1HOQjfh_NTTt_ODCag5zL4lR2izGaNkwlsHdqQn2wDSO8luQ-uXW6nY250junTsGmgXZC7Z-bWMNXofnPMDXMb1qcxagR5cipZgA8Sw4AahpllbkJ9u5OgUxTIW5_xzZ2MEp0CrngS1HpueQdtWs41X-boDzipCgkVa44Pb2ZQXu3TQfZyXIi6DZZL_b01FEfDpE6Ic0ue8fWbRD4A2EdJCVz46sVYAhNAXhHo27KyQAexxpDJMDTuK5B3PpL_Xak',
+    403:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuB-JqObxMdprCRs9IB8HFknDNxwCRj3jf8y--TSaWHLGuUR1Ui3hdAUwyG7-XtD6ZnNRvbwSne1VR5IYOj_z5yr2n4bVrPh0qvHJFvnod9WTDd8W9qp6ST5W_rmRwvpJeiPOgWhnsA39S4bIP5QKUORkNlMueH9rFz4Yu0Z4P748ScvbFlWB5NGvgqj0sryo8za-7JVCxVnlfkl0uv9JYp6mnbq9uFgtRgdsROfHsJXYLtv8YkUmsFVIFEawfGsqf2G3-MO2HWcyHE',
+  },
+}
+
