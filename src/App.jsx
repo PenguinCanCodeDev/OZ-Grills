@@ -12,6 +12,8 @@ import CartDrawer from './components/cart/CartDrawer'
 import ManualTransfer from './components/payment/ManualTransfer'
 import AboutUs from './components/info/AboutUs'
 import ContactUs from './components/info/ContactUs'
+import DeveloperFooter from './components/layout/DeveloperFooter'
+
 
 // Admin Components (To be created)
 import AdminLogin from './pages/admin/AdminLogin'
@@ -152,7 +154,10 @@ function Shop({
           onClose={() => setInfoModal(null)}
         />
       )}
+
+      <DeveloperFooter />
     </>
+
   )
 }
 

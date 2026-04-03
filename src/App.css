@@ -801,3 +801,53 @@ select.input {
   font-size: 11px;
   letter-spacing: 0.24px;
 }
+
+/* Developer Footer */
+.developer-footer {
+  text-align: center;
+  padding: 40px 20px 60px;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 40px;
+}
+
+.developer-footer p {
+  font-size: 14px;
+  color: rgba(231, 231, 234, 0.5);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.animated-text {
+  color: #f8c95c;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 120px;
+  transition: all 0.3s ease;
+  animation: fadeInOut 3s infinite;
+  text-shadow: 0 0 10px rgba(248, 201, 92, 0.2);
+}
+
+.animated-text:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  15%, 85% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+}
